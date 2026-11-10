@@ -64,19 +64,4 @@
     });
   });
   document.querySelectorAll('[data-count]').forEach(function (el) { cio.observe(el); });
-
-  // Contact form
-  var form = document.getElementById('contact-form'), status = document.getElementById('form-status');
-  form.addEventListener('submit', function (ev) {
-    ev.preventDefault();
-    if (!form.checkValidity()) { status.textContent = 'Please complete all fields with a valid email.'; return; }
-    status.textContent = 'Sending…';
-    fetch(form.action, { method: 'POST', body: new FormData(form) })
-      .then(function (r) { return r.json(); })
-      .then(function (d) {
-        status.textContent = d.ok ? 'Thank you! I will get back to you soon.' : (d.error || 'Something went wrong.');
-        if (d.ok) form.reset();
-      })
-      .catch(function () { status.textContent = 'Could not send right now. Please connect via LinkedIn.'; });
-  });
 })();

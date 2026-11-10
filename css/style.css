@@ -78,13 +78,9 @@ a.badge:hover,.badge:hover{transform:translateY(-4px);border-color:var(--accent)
 blockquote{margin:0;background:var(--card);border:1px solid var(--border);border-left:4px solid var(--accent);border-radius:14px;padding:1.4rem 1.6rem;font-style:italic}
 cite{display:block;margin-top:.6rem;font-style:normal;font-size:.9rem;color:var(--muted)}
 
-.form{display:grid;gap:1rem;margin-top:1rem}
-label{display:grid;gap:.4rem;font-weight:500;font-size:.95rem}
-input,textarea{font:inherit;padding:.85rem 1rem;border-radius:12px;border:1px solid var(--border);background:var(--card);color:var(--text)}
-input:focus,textarea:focus{outline:2px solid var(--accent);border-color:transparent}
-.hp{position:absolute;left:-9999px}
-.form .btn{justify-self:start}
-#form-status{margin:0;color:var(--muted)}
+.contact-card{background:var(--card);border:1px solid var(--border);border-radius:18px;padding:2.5rem 2rem;text-align:center;display:grid;gap:1.5rem;margin-top:1.5rem}
+.contact-card p{color:var(--text);margin:0;font-size:1.05rem}
+.contact-card .cta{justify-content:center}
 
 .footer{text-align:center;padding:2rem 4%;border-top:1px solid var(--border);color:var(--muted);font-size:.9rem}
 
